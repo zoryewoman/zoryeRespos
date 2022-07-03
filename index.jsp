@@ -74,7 +74,7 @@ function chkCnt(obj) {
 	}
 	*/
 }
-// ¹İ¿µ ´ë»ó ¸®½ºÆ®¸¦ ¼¿·ºÆ®
+// ë°˜ì˜ ëŒ€ìƒ ë¦¬ìŠ¤íŠ¸ë¥¼ ì…€ë ‰íŠ¸
 function applylist()
 {
 	f=document.frm ;
@@ -87,7 +87,7 @@ function applylist()
 }
 
 
-//´ë»ó ÀÎÅÍÆäÀÌ½º Á¤º¸¸¦ ¼¿·ºÆ®
+//ëŒ€ìƒ ì¸í„°í˜ì´ìŠ¤ ì •ë³´ë¥¼ ì…€ë ‰íŠ¸
 function selectRequirement()
 {
 	f = document.frm ;
@@ -97,12 +97,12 @@ function selectRequirement()
     f.submit();
 }
 
-// ÀÎÅÍÆäÀÌ½º¸¦ ¹İ¿µ
+// ì¸í„°í˜ì´ìŠ¤ë¥¼ ë°˜ì˜
 function insertRequirement()
 {
 	f = document.frm ;
 	if (f.RUN_DATE.value == "") {
-		alert("Date¸¦ ÀÔ·ÂÇÏ¼¼¿ä!");
+		alert("Dateë¥¼ ì…ë ¥í•˜ì„¸ìš”!");
 		return;
 	}
 	
@@ -114,7 +114,7 @@ function insertRequirement()
 
 
 /***********************************************************
- * °³¹ß : IM_INTERFACE_MNG_TMP Å×ÀÌºí¿¡ ¹İ¿µ.
+ * ê°œë°œ : IM_INTERFACE_MNG_TMP í…Œì´ë¸”ì— ë°˜ì˜.
  ************************************************************/
 function _01_insertDBInterfaceInfo_tmp_D()
 {
@@ -127,7 +127,7 @@ function _01_insertDBInterfaceInfo_tmp_D()
 }
 
 /***********************************************************
- * °³¹ß : IM_INTERFACE_MNG Å×ÀÌºí¿¡ ¹İ¿µ.
+ * ê°œë°œ : IM_INTERFACE_MNG í…Œì´ë¸”ì— ë°˜ì˜.
  ************************************************************/
 function _02_insertDBNewInterfaceInfo_D()
 {
@@ -140,7 +140,7 @@ function _02_insertDBNewInterfaceInfo_D()
 }
 
 /***********************************************************
- * °³¹ß : Àü¹® ÄÁÇÇ±× »ı¼º
+ * ê°œë°œ : ì „ë¬¸ ì»¨í”¼ê·¸ ìƒì„±
  ************************************************************/
 function _03_createConfig_D()
 {
@@ -153,7 +153,7 @@ function _03_createConfig_D()
 }
 
 /***********************************************************
- * °³¹ß : ÆÄÀÏ ÄÁÇÇ±× »ı¼º
+ * ê°œë°œ : íŒŒì¼ ì»¨í”¼ê·¸ ìƒì„±
  ************************************************************/
 function _04_createFileConfig()
 {
@@ -166,7 +166,7 @@ function _04_createFileConfig()
 }
 
 /***********************************************************
- * °³¹ß : ´ë¿Ü°è Àü¹® ÄÁÇÇ±× »ı¼º(fep_put.xml , fep_get.xml)
+ * ê°œë°œ : ëŒ€ì™¸ê³„ ì „ë¬¸ ì»¨í”¼ê·¸ ìƒì„±(fep_put.xml , fep_get.xml)
  ************************************************************/
 function _05_createFepPutGetConfig()
 {
@@ -178,7 +178,7 @@ function _05_createFepPutGetConfig()
     f.submit();
 }
 /***********************************************************
- * °³¹ß : ´ë¿Ü°è ÆÄÀÏ ÄÁÇÇ±× »ı¼º(fepfteput.xml)
+ * ê°œë°œ : ëŒ€ì™¸ê³„ íŒŒì¼ ì»¨í”¼ê·¸ ìƒì„±(fepfteput.xml)
  ************************************************************/
 function _06_createFepFtePutConfig()
 {
@@ -191,7 +191,7 @@ function _06_createFepFtePutConfig()
 }
 
 /***********************************************************
- * °³¹ß : eai_get.xml ÄÁÇÇ±× »ı¼º
+ * ê°œë°œ : eai_get.xml ì»¨í”¼ê·¸ ìƒì„±
  ************************************************************/
 function _07_createEaiGetConfig()
 {
@@ -204,7 +204,7 @@ function _07_createEaiGetConfig()
 }
 
 /***********************************************************
- * °³¹ß : Å¥ ½ºÅ©¸³Æ® »ı¼º
+ * ê°œë°œ : í ìŠ¤í¬ë¦½íŠ¸ ìƒì„±
  ************************************************************/
 function _08_createMqscScript()
 {
@@ -217,7 +217,7 @@ function _08_createMqscScript()
 }
 
 /***********************************************************
- * °³¹ß : ÄÁÇÇ±× ÆÄÀÏ ¹èÆ÷
+ * ê°œë°œ : ì»¨í”¼ê·¸ íŒŒì¼ ë°°í¬
  ************************************************************/
 function _09_sendConfig()
 {
@@ -230,7 +230,7 @@ function _09_sendConfig()
 }
 
 /***********************************************************
- * °³¹ß : Å¥ »ı¼º, Á¦Å¸ Àç±âµ¿, ´ë¿Ü°è(¿¥¾¾Å¥ºê) ÄÁÇÇ±× ¸®·Îµù.
+ * ê°œë°œ : í ìƒì„±, ì œíƒ€ ì¬ê¸°ë™, ëŒ€ì™¸ê³„(ì— ì”¨íë¸Œ) ì»¨í”¼ê·¸ ë¦¬ë¡œë”©.
  ************************************************************/
 function _10_executeReload()
 {
@@ -243,7 +243,7 @@ function _10_executeReload()
 }
 
 /***********************************************************
- * °³¹ß : ¹İ¿µ ³¯Â¥ ¾÷µ¥ÀÌÆ®.
+ * ê°œë°œ : ë°˜ì˜ ë‚ ì§œ ì—…ë°ì´íŠ¸.
  ************************************************************/
 function _11_commitIntfInfo()
 {
@@ -260,7 +260,7 @@ function reflectionToTMP()
 	f = document.frm ;
 	//alert(f.RUN_DATE.value);
 	/*if(!f.RUN_DATE.value) {
-		alert("¹İ¿µ ³¯Â¥¸¦ ÀÔ·ÂÇÏ¼¼¿ä!");
+		alert("ë°˜ì˜ ë‚ ì§œë¥¼ ì…ë ¥í•˜ì„¸ìš”!");
 		f.RUN_DATE.focus();
 		return;
 	}*/
@@ -283,7 +283,7 @@ function reflectionToTMP2()
 	f = document.frm ;
 	//alert(f.RUN_DATE.value);
 	if(!f.RUN_DATE2.value) {
-		alert("¹İ¿µ ³¯Â¥¸¦ ÀÔ·ÂÇÏ¼¼¿ä!");
+		alert("ë°˜ì˜ ë‚ ì§œë¥¼ ì…ë ¥í•˜ì„¸ìš”!");
 		f.RUN_DATE2.focus();
 		return;
 	}
@@ -319,7 +319,7 @@ function search(pgNo){
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="14"><img src="../img/bul_blue01.gif"></td>
-    <td height="30"><div style="font-family: Dotum; margin-bottom:0px;padding-bottom:0px; padding-top:4px;font-size: 14px; font-weight: bold; color:#013777; margin-left: 2px;">ÀÎÅÍÆäÀÌ½º ¹İ¿µ(°³¹ß)</div></td>
+    <td height="30"><div style="font-family: Dotum; margin-bottom:0px;padding-bottom:0px; padding-top:4px;font-size: 14px; font-weight: bold; color:#013777; margin-left: 2px;">ì¸í„°í˜ì´ìŠ¤ ë°˜ì˜(ê°œë°œ)</div></td>
   </tr>
 </table>
 
@@ -335,7 +335,7 @@ function search(pgNo){
   <table height="20" border="0" cellpadding="0" cellspacing="0">
     <tr>
       <td height="20" nowrap><img src="../img/btn_search01.gif" height="20"></td>
-      <td class="btnc_com1"><a href="javascript:applylist()">¹İ¿µ ´ë»ó ÀÎÅÍÆäÀÌ½º Á¶È¸</a></td>
+      <td class="btnc_com1"><a href="javascript:applylist()">ë°˜ì˜ ëŒ€ìƒ ì¸í„°í˜ì´ìŠ¤ ì¡°íšŒ</a></td>
       <td><img src="../img/btn_com02.gif" height="20"></td>
     </tr>
   </table>
@@ -353,14 +353,14 @@ function search(pgNo){
 	</input></td>
   	<td nowrap class="tt02" width="50">IF_NO</td>
     <td nowrap class="tt02" width="300">IF_ID</TD>
-    <td nowrap class="tt02" width="100">¼Û½Å ½Ã½ºÅÛ</TD>
-    <td nowrap class="tt02" width="100">¼ö½Å ½Ã½ºÅÛ</TD>
-    <td nowrap class="tt02" width="150">ÃÖÁ¾ ¼öÁ¤ ³¯Â¥<BR>(¼Û½Å/°³¹ß)</TD>
-    <td nowrap class="tt02" width="150">ÃÖÁ¾ ¼öÁ¤ ³¯Â¥<BR>(¼ö½Å/°³¹ß)</TD>
-    <td nowrap class="tt02" width="150">ÃÖÁ¾ ¼öÁ¤ ³¯Â¥<BR>(¼Û½Å/Å×½ºÆ®)</TD>
-    <td nowrap class="tt02" width="150">ÃÖÁ¾ ¼öÁ¤ ³¯Â¥<BR>(¼ö½Å/Å×½ºÆ®)</TD>
-    <td nowrap class="tt02" width="150">ÃÖÁ¾ ¼öÁ¤ ³¯Â¥<BR>(¼Û½Å/¿î¿µ)</TD>
-    <td nowrap class="tt02" width="150">ÃÖÁ¾ ¼öÁ¤ ³¯Â¥<BR>(¼ö½Å/¿î¿µ)</TD>
+    <td nowrap class="tt02" width="100">ì†¡ì‹  ì‹œìŠ¤í…œ</TD>
+    <td nowrap class="tt02" width="100">ìˆ˜ì‹  ì‹œìŠ¤í…œ</TD>
+    <td nowrap class="tt02" width="150">ìµœì¢… ìˆ˜ì • ë‚ ì§œ<BR>(ì†¡ì‹ /ê°œë°œ)</TD>
+    <td nowrap class="tt02" width="150">ìµœì¢… ìˆ˜ì • ë‚ ì§œ<BR>(ìˆ˜ì‹ /ê°œë°œ)</TD>
+    <td nowrap class="tt02" width="150">ìµœì¢… ìˆ˜ì • ë‚ ì§œ<BR>(ì†¡ì‹ /í…ŒìŠ¤íŠ¸)</TD>
+    <td nowrap class="tt02" width="150">ìµœì¢… ìˆ˜ì • ë‚ ì§œ<BR>(ìˆ˜ì‹ /í…ŒìŠ¤íŠ¸)</TD>
+    <td nowrap class="tt02" width="150">ìµœì¢… ìˆ˜ì • ë‚ ì§œ<BR>(ì†¡ì‹ /ìš´ì˜)</TD>
+    <td nowrap class="tt02" width="150">ìµœì¢… ìˆ˜ì • ë‚ ì§œ<BR>(ìˆ˜ì‹ /ìš´ì˜)</TD>
   </tr>
 </table>
 <!-- Result Table : end -->
