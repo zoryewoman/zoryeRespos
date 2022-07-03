@@ -120,9 +120,9 @@ public class callExcelCpsLinks {
 
 
 
-	public static void main(String[] args) throws IOException, JSONException {
+	//public static void main(String[] args) throws IOException, JSONException {
 		
-		
+	public static goCPS() throws IOException, JSONException {	
 		// 프로퍼티 로드
 		callExcelCpsLinks callExcelCpsLinks = new callExcelCpsLinks();
 		callExcelCpsLinks.getProperties();
