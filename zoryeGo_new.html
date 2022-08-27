@@ -3,8 +3,15 @@
     <script>
         
 		//window.location = "https://coupa.ng/" + getQueryVariable('id');
-		window.location = "https://link.coupang.com/a" + getQueryVariable('id');
-        function getQueryVariable(variable) {
+		var id = getQueryVariable('id');
+		if(id.indexOf('app') == -1) // 'app'라는 문자가 없을때 쿠팡으로, 있으면 url로 
+		{
+		  window.location = "https://link.coupang.com/a" + id;
+		} else {
+		  window.location = id;
+		}
+
+		function getQueryVariable(variable) {
             var query = window.location.search.substring(1);
             var vars = query.split('&');
             for (var i = 0; i < vars.length; i++) {
